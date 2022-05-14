@@ -288,10 +288,47 @@ ul {
   color: var(--title-text-cl);
 }
 .team-profession {
-  margin: 0;
+  margin: 0 0 16px 0;
 
   line-height: 1.19em;
 }
+
+/* Іконки соц-мереж */
+
+.socials-list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #ffffff;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-cl);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* .socials-link:hover .socials-icon {
+  fill: #ffffff; */
 
 /*  Футер */
 
