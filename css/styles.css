@@ -109,12 +109,15 @@ ul {
   margin: 0 0 0 auto;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 .cont-item + .cont-item {
   margin-left: 50px;
 }
+
 .cont-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -123,9 +126,15 @@ ul {
   letter-spacing: 0.02em;
   color: var(--main-text-cl);
 }
+
 .cont-link:hover,
 .cont-link:focus {
   color: var(--accent-text-cl);
+}
+
+.cont-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Секція герой */
@@ -327,15 +336,17 @@ ul {
   fill: currentColor;
 }
 
-/* .socials-link:hover .socials-icon {
-  fill: #ffffff; */
-
 /*  Футер */
 
 .footer {
   background-color: var(--dark-bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.conteiner.foot {
+  display: flex;
+  align-items: baseline;
 }
 
 .foot-logo {
@@ -381,6 +392,45 @@ ul {
 .footer-cont-link:hover,
 .footer-cont-link:focus {
   color: var(--accent-text-cl);
+}
+
+.foot-conteiner-socials {
+  margin-left: 70px;
+}
+
+.title-join {
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14em;
+  color: #ffffff;
+}
+
+.foot-socials-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.foot-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.foot-socials-link:hover,
+.foot-socials-link:focus {
+  background-color: var(--accent-text-cl);
+}
+
+.foot-socials-icon {
+  fill: currentColor;
 }
 
 /* Сторінка портфоліо */
