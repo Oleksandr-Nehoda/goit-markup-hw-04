@@ -140,9 +140,16 @@ ul {
 /* Секція герой */
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
   background-color: var(--dark-bg-cl);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-background.jpg);
+
   text-align: center;
 }
 .hero-title {
@@ -151,7 +158,6 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5em;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -200,6 +206,21 @@ ul {
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+
+  background-color: var(--main-bg-cl);
+}
+
+.advantages-icon {
 }
 
 .advantages-title {
@@ -333,6 +354,47 @@ ul {
 }
 
 .socials-icon {
+  fill: currentColor;
+}
+
+/*  Постійні клієнти */
+
+.client-title {
+  margin: 0 0 50px 0;
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  color: var(--title-text-cl);
+}
+
+.client-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-text-cl);
+  border-color: var(--accent-text-cl);
+}
+
+.client-icon {
   fill: currentColor;
 }
 
@@ -499,6 +561,12 @@ ul {
 .portfolio-card-item {
   width: 370px;
   margin: 15px;
+}
+
+.portfolio-card-item:hover,
+.portfolio-card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-img {
