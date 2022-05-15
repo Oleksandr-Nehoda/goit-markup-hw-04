@@ -30,7 +30,7 @@ ul {
   width: 1200px;
 }
 
-/* Хедер */
+/*#region Хедер */
 
 .page-header {
   border-bottom-width: 1px;
@@ -136,8 +136,9 @@ ul {
   margin-right: 10px;
   fill: currentColor;
 }
+/*#endregion*/
 
-/* Секція герой */
+/*#region Секція герой */
 
 .hero {
   margin-left: auto;
@@ -179,8 +180,9 @@ ul {
   border: 0;
   border-radius: 4px;
 }
+/*#endregion*/
 
-/*   Наші переваги */
+/*#region  Наші переваги */
 
 .visually-hidden {
   position: absolute;
@@ -213,14 +215,10 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
 
   background-color: var(--main-bg-cl);
-}
-
-.advantages-icon {
 }
 
 .advantages-title {
@@ -231,13 +229,15 @@ ul {
   text-transform: uppercase;
   color: var(--title-text-cl);
 }
+
 .advantages-text {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
 }
+/*#endregion*/
 
-/*  Чим ми займаємось */
+/*#region  Чим ми займаємось */
 
 .section.specialty {
   padding-top: 0;
@@ -265,8 +265,9 @@ ul {
 .specialty-img {
   display: block;
 }
+/*#endregion*/
 
-/*  Наша команда */
+/*#region  Наша команда */
 
 .section.team {
   background-color: var(--main-bg-cl);
@@ -356,8 +357,9 @@ ul {
 .socials-icon {
   fill: currentColor;
 }
+/*#endregion*/
 
-/*  Постійні клієнти */
+/*#region  Постійні клієнти */
 
 .client-title {
   margin: 0 0 50px 0;
@@ -397,8 +399,9 @@ ul {
 .client-icon {
   fill: currentColor;
 }
+/*#endregion*/
 
-/*  Футер */
+/*#region  Футер */
 
 .footer {
   background-color: var(--dark-bg-cl);
@@ -494,10 +497,11 @@ ul {
 .foot-socials-icon {
   fill: currentColor;
 }
+/*#endregion*/
 
 /* Сторінка портфоліо */
 
-/*  Список кнопок */
+/*#region  Список кнопок */
 
 .portfolio-list-btn {
   margin: 0 0 50px 0;
@@ -548,8 +552,9 @@ ul {
   background-color: var(--accent-text-cl);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+/*#endregion*/
 
-/* Список карток */
+/*#region Список карток */
 
 .portfolio-card-list {
   margin: -15px;
@@ -563,8 +568,12 @@ ul {
   margin: 15px;
 }
 
-.portfolio-card-item:hover,
-.portfolio-card-item:focus {
+.portfolio-card-link {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -595,3 +604,4 @@ ul {
   color: var(--main-text-cl);
   line-height: 1.88em;
 }
+/*#endregion*/
